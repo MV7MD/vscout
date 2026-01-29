@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCOUT FOOTBALL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="logo">
+            <img src="logo.jpg" alt="VSCOUT Logo" class="logo-animate"> 
+        </div>
+        
+        <ul class="nav-links">
+            <li class="fade-in-down" style="--delay: 0.1s"><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+            <li class="fade-in-down" style="--delay: 0.2s"><a href="#join" data-i18n="nav_join">سجل كلاعب</a></li> <li class="fade-in-down" style="--delay: 0.3s"><a href="#about" data-i18n="nav_about">من نحن</a></li>
+            <li class="fade-in-down" style="--delay: 0.4s"><a href="#goals" data-i18n="nav_goals">أهدافنا</a></li>
+            <li class="fade-in-down" style="--delay: 0.5s"><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-controls fade-in-down" style="--delay: 0.6s">
+            <button class="lang-btn" id="lang-toggle">EN</button>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1 class="animate-hidden fade-up">
+                <span data-i18n="hero_title_1">أظهر مهاراتك للعالم مع</span> <br>
+                <span>VSCOUT FOOTBALL</span>
+            </h1>
+            <p class="animate-hidden fade-up animate-delay-1" data-i18n="hero_desc">
+                المنصة الأولى لدعم المواهب الكروية الصاعدة. نحن الجسر بين مهارتك والأندية المحترفة.
+            </p>
+            <div class="animate-hidden fade-up animate-delay-2">
+                <a href="#join" class="cta-btn bounce-hover">
+                    <span data-i18n="hero_cta">سجل الآن</span> 
+                    <i class="fas fa-arrow-left arrow-icon" style="margin: 0 10px;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="join">
+        <h2 class="section-title animate-hidden fade-up" data-i18n="join_title">انضم إلينا</h2>
+        
+        <div class="roles-grid" style="justify-content: center; display: flex;">
+            <div class="role-card animate-hidden fade-up animate-delay-1" style="max-width: 500px; width: 100%;">
+                <div class="role-icon"><i class="fas fa-running"></i></div>
+                <h3 data-i18n="role_player">لاعب موهوب</h3>
+                <p data-i18n="role_player_desc">هل تبحث عن فرصة؟ املأ الاستمارة الآن وارفع فيديوهاتك ليشاهدك الكشافة.</p>
+                
+                <a href="https://forms.gle/tawfcDQrf6rjxW8n8" target="_blank" class="role-btn">
+                    <span data-i18n="role_btn_text">سجل بياناتك الآن</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="goals">
+        <h2 class="section-title animate-hidden fade-up" data-i18n="goals_title">أهدافنا</h2>
+        <div class="goals-grid">
+            <div class="goal-card animate-hidden fade-up animate-delay-1">
+                <div class="icon-box"><i class="fas fa-video"></i></div>
+                <h3 data-i18n="goal_1_title">عرض المهارات</h3>
+                <p data-i18n="goal_1_desc">نصمم لك ملف احترافي يعرض أفضل لقطاتك ومهاراتك بشكل يجذب المدربين.</p>
+            </div>
+            <div class="goal-card animate-hidden fade-up animate-delay-2">
+                 <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                <h3 data-i18n="goal_2_title">جلب العروض</h3>
+                <p data-i18n="goal_2_desc">نتواصل مع الأندية والكشافة لتوفير فرص اختبار حقيقية وعقود احتراف.</p>
+            </div>
+            <div class="goal-card animate-hidden fade-up animate-delay-3">
+                 <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                <h3 data-i18n="goal_3_title">التطوير والتحليل</h3>
+                <p data-i18n="goal_3_desc">نقدم نصائح وتحليلات لأدائك لتطوير مستواك والوصول للجاهزية التامة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title animate-hidden fade-up" data-i18n="about_title">من نحن</h2>
+        <div class="about-content">
+            <div class="about-text animate-hidden fade-right animate-delay-1">
+                <h3 data-i18n="about_head">نحن نؤمن بكل موهبة</h3>
+                <br>
+                <p data-i18n="about_p1">
+                    في VSCOUT، إحنا مؤمنين إن فيه آلاف المواهب المدفونة في كل مكان، ومحتاجين بس فرصة حقيقية. هدفنا مش بس إننا نعملك فيديو، هدفنا إننا نكون صوتك وصورتك قدام الأندية الكبيرة.
+                </p>
+                <br>
+                <p data-i18n="about_p2">
+                    إحنا فريق من المحللين والرياضيين قررنا نلغي فكرة (الواسطة) ونخلي (الموهبة) هي الحكم. بنوفرلك منصة احترافية تعرض فيها مهاراتك، وإحنا علينا نوصلها للكشافين والمدربين الصح.
+                </p>
+                
+                <a href="#join" class="cta-btn" style="margin-top: 25px;" data-i18n="about_cta">انضم لعائلتنا</a>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1CGrQgnpwK/?mibextid=wwXIfr" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/vscoutfootball/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-image-container animate-hidden fade-left">
+                <img src="about.jpg" alt="About VSCOUT" class="about-img-smooth">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title animate-hidden fade-up" data-i18n="contact_title">تواصل معنا</h2>
+        
+        <div class="contact-form animate-hidden fade-up animate-delay-1" style="text-align: center; align-items: center;">
+            <i class="fas fa-paper-plane" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+            <p style="font-size: 1.1rem; margin-bottom: 30px; color: var(--text-color);">
+                للاستفسارات العامة أو الشراكات، يمكنك مراسلتنا مباشرة عبر البريد الإلكتروني الرسمي.
+            </p>
+            
+            <a href="mailto:Info@vscout.football?subject=استفسار عام - VSCOUT" 
+               class="cta-btn bounce-hover" 
+               style="display: inline-flex; width: auto; padding: 15px 40px; font-size: 1.2rem;">
+               <i class="fas fa-envelope" style="margin-left: 10px;"></i>
+               <span data-i18n="form_btn">راسلنا عبر الإيميل</span>
+            </a>
+            
+            <p style="margin-top: 20px; font-size: 1rem; color: var(--text-light); direction: ltr; font-weight: bold;">
+                Info@vscout.football
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VSCOUT FOOTBALL. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
